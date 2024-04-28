@@ -1,6 +1,6 @@
 <img src="preview/pic.jpg">
 
-### [Onky](https://onky.vercel.app/) is a switched themes online radio player. ###
+### [SonoDuo](https://sonoduo.vercel.app/) is a switched themes online radio player. ###
 
 ```
 Features
