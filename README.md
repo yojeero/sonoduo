@@ -1,6 +1,6 @@
 <img src="preview/pic.jpg">
 
-### [SonoDuo](https://sonoduo.vercel.app/) is a switched themes online radio player. ###
+### [Yonoe Duo](https://yonoeduo.vercel.app/) is a switched themes online radio player. ###
 
 ```
 Features
