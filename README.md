@@ -1,6 +1,6 @@
 <img src="preview/pic.jpg">
 
-### [Yonoe Duo](https://yonoeduo.vercel.app/) is a switched themes online radio player. ###
+### [Arumo](https://arumo.vercel.app/) is a switched themes online radio player. ###
 
 ```
 Features
