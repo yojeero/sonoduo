@@ -573,49 +573,65 @@ input:focus, input:active
 /* Responsive mobile screen max height 675px   */
 
 @media (max-height: 42.1875rem)
-{
+{}
 
+/*  Responsive mobile screen max 840px   */
+
+@media ( max-width: 52.5rem )
+{
+	
 	.container
 {
 	background-image : none;
 	background-color : #1b2344;
 }
+
 	.theme-light .container
 {
 	background-image : none;
 	background-color : #dde2e5;
 }
 
-.player, .theme-light .player
+.player ,
+.theme-light .player
 {
-	box-shadow : none;	
-	border-radius: 0;
+	width : 100dvw;
+	height : 100dvh;
+
+	border-radius : 0;
+	box-shadow : none;
 }
 
-.player-bg, .theme-light .player-bg 
-{ 
-	border-radius: 0;
+.player-bg ,
+.theme-light .player-bg
+{
+	width : 100dvw;
+	height : 100dvh;
+
+	border-radius : 0;
 }
 
-.album-img, .theme-light .album-img
+.album-img ,
+.theme-light .album-img
 {
-
 	border-top-left-radius : 0;
 	border-top-right-radius : 0;
 }
 
-.main, .theme-light .main 
+.main ,
+.theme-light .main
 {
-	border-bottom-left-radius : 0;
 	border-bottom-right-radius : 0;
+	border-bottom-left-radius : 0;
 }
 
+.cover-img
+{
+    width : 100dvw;
+	height : 25rem;	
+}	
+
 }
-
-/*  Responsive mobile screen max 840px   */
-
-@media ( max-width: 52.5rem )
-{}
 
 /*  Responsive desktop screen min 2000px   */
 
