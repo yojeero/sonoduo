@@ -18,33 +18,33 @@ new Vue({
         {
           name: "CITY23",
           artist: "Premium Pop",
-          cover: "img/red.webp",
+          cover: "img/laguna.webp",
           source: "https://live.stream.maxfive.com/max5-city23/stream/mp3",
           url: "https://www.city23.at/"
         },  
         {
-          name: "ANTENNE MAINZ",
+          name: "AN. MAINZ",
           artist: "Best Hits",
-          cover: "img/model.webp",
+          cover: "img/pool.webp",
           source: "http://addrad.io/44556v5",
           url: "https://www.antenne-mainz.de"
         },
         {
           name: "MARETIMO",
           artist: "Lounge",
-          cover: "img/pool.webp",
+          cover: "img/dark.webp",
           source: "https://s35.derstream.net/lounge.mp3",
           url: "https://www.maretimo-records.com/en"
         },      
         {
           name: "CITY23          ",
           artist: "Beat,Baby!",
-          cover: "img/cute.webp",
+          cover: "img/red.webp",
           source: "https://live.stream.maxfive.com/max5-beat/stream/mp3",
           url: "https://www.city23.at/"
         },   
         {
-          name: "ANTENNE BAYERN",
+          name: "AN. BAYERN",
           artist: "Luxury Pop",
           cover: "img/leaves.webp",
           source: "http://stream.antenne.de/pop-xxl/stream/mp3",

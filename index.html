@@ -32,17 +32,15 @@
 <body>
 
 		<!-- loader -->
-		<div class="loader">
+		<!-- <div class="loader">
 			<svg viewBox="-3 -4 39 39"> <polygon fill="#daa520" stroke="#fff" stroke-width="1.3" points="16,0 32,32 0,32"></polygon></svg>
-		</div>
+		</div> -->
 
 	<!-- player -->      
 
 	<div class="container" id="app">
 
 	<div class="player">
-		
-		<div class="player-bg">
 
 		<div class="top-icon">
 
@@ -116,8 +114,6 @@
 		</div>
 	
 	</div>
-
-	</div><!-- end player-bg  -->
 			
 		<div class="bottom-clock">	
 			
@@ -137,7 +133,7 @@
 
  <!-- Loader hide -->  
 <script>
- 	setTimeout(function(){document.querySelector('.loader').style.display='none'; }, 500 );
+	setTimeout(function(){document.querySelector('.loader').style.display='none'; }, 500 );
 </script>
 
      <!-- SVG icons -->
@@ -149,9 +145,9 @@
 		var $html = $("html");
 			$("#switch").on("change", function() {
 				if (this.checked) {
-					$html.addClass("theme-light");
+					$html.addClass("second-theme");
 				} else {
-					$html.removeClass("theme-light");
+					$html.removeClass("second-theme");
 				}
 		});
 	</script> 

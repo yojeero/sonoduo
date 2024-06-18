@@ -5,17 +5,18 @@
 
 body
 {
-    font-family : 'Jost','Segoe UI','Helvetica Neue', system-ui;
+	font-family : 'Jost','Segoe UI','Helvetica Neue', system-ui;
 	font-size : 1rem;
 	font-weight : 400;
 
 	transition : all .5s ease-in-out;
 	transition : color 1s;
-
 	letter-spacing : 1px;
+
+	color : #989da2;
 }
 
-/* ------ dark theme -------- */
+/* ------ main theme -------- */
 
 .container
 {
@@ -28,7 +29,7 @@ body
 	width : 100%;
 	height : 100%;	
 
-	background : url(../img/neon.webp) no-repeat center, #1b2344;
+	background : url(../img/wave.svg) no-repeat center, #1b2344;
 	background-size : cover;
 }
 
@@ -54,23 +55,8 @@ body
 
 	border-radius : 40px;
 
-	/* background : #1b2344; */
+	background : #141d29;
 	box-shadow : -30px -30px 60px #0b0e18, 30px 30px 60px #000;	
-}
-
-.player-bg
-{
-	display : flex;
-	flex-direction : column;
-    align-items : center;
-	justify-content: flex-start;
-
-	width : 20rem;
-	height : 42.5rem;
-
-	border-radius : 40px;
-
-	background : #1b2344;
 }
 
 .top-icon
@@ -83,28 +69,27 @@ body
 	width : 80%;
 	height : 3.125rem;
 
-	color : #bfbc8a; 
+	color : #89864c; 
 }
 
 .point a
 {
 	display : flex;
 
-	width : .5rem;
-	height : .5rem;
+	width : .875rem;
+	height : .875rem;
 
 	cursor : pointer;
 	transition : all .3s ease;
 
-	border : 1px solid #10152a;
 	border-radius : 50%;
 
-	background : #c10c2c;
+	background : #036b8b;
 }
 
 .point a:hover
 {
-	background : #f1bc4c;
+	background : #cf950d;
 }
 
 .time-label
@@ -165,7 +150,7 @@ body
 	user-select : none;
 	pointer-events : none;
 
-	color : #bfbc8a;
+	color : #89864c;
 }
 
 input[type=checkbox]
@@ -222,7 +207,7 @@ input:focus, input:active
 	flex-flow : row nowrap;
 
 	width : 100%;
-	height : 1.5rem;
+	height : .5rem;
 
 	user-select : none;
 	pointer-events : none;
@@ -237,7 +222,7 @@ input:focus, input:active
 	overflow : hidden;
 
 	width : 100%;
-	height : 1.5rem;
+	height : .5rem;
 
 	user-select : none;
 	pointer-events : none;
@@ -251,7 +236,7 @@ input:focus, input:active
 	width : 0;
 	height : inherit;
 
-	background : #f1bc4c;
+	background : #cf950d;
 }
 
 .main
@@ -260,19 +245,19 @@ input:focus, input:active
 	align-items : center;
 	flex : 1;
 	flex-flow : row nowrap;
-	justify-content : space-evenly;
+	justify-content : space-between;
 
 	width : 100%;
 	height : 100%;
 
-	padding : 0 2rem;
+	padding : 0 1rem 0 2rem;
 
-	color : #bfbc8a;
+	color : #a6a35e;
 
 	border-bottom-right-radius : 40px;
 	border-bottom-left-radius : 40px;
 
-	background : #10152a;
+	background : #0c131b;
 }
 
 .album-info
@@ -331,7 +316,7 @@ input:focus, input:active
 	cursor : pointer;
 	transition : all .3s ease;
 
-	color : #c10c2c;
+	color : #036b8b;
 
 	fill : currentColor;
 	stroke : currentColor;
@@ -342,8 +327,8 @@ input:focus, input:active
 {
 	width : 1.75rem;
 	height : 1.75rem;
-
-	color : #cf950d;
+	
+	color : #c10c2c;
 }
 
 .xl-icon
@@ -364,8 +349,7 @@ input:focus, input:active
 	border-radius : 50%;
 	outline : none;
 
-	border : 6px solid #2d3b73; 
-	background : #25305e;
+	background : #172433;
 }
 
 .xl-icon svg
@@ -379,8 +363,7 @@ input:focus, input:active
 
 	cursor : pointer;
 
-	color : #f1bc4c;
-	/* color : #bfbc8a; */
+	color : #04a1d1;
 
 	fill : currentColor;
 	stroke : currentColor;
@@ -389,13 +372,12 @@ input:focus, input:active
 
 .xl-icon:hover
 {
-	border : none;
 	background : #c10c2c;
 }
 
 .xl-icon svg:hover
 {
-	color : #fff;
+	color : #c4c7ca;
 }
 
 .bottom-clock
@@ -419,7 +401,7 @@ input:focus, input:active
 	font-size : 2rem;
 	letter-spacing : .2rem;
 
-	color : #3a9dcd;
+	color : #cf950d;
 }
 
 #day
@@ -429,7 +411,7 @@ input:focus, input:active
 	letter-spacing : .4rem;
 	text-transform : uppercase;
 
-	color : #bfbc8a;
+	color : #afac6d;
 }
 
 /* cover effect */
@@ -442,88 +424,83 @@ input:focus, input:active
 .scale-in-enter {transform: scale(1.2); pointer-events: none; opacity: 0; } 
 .scale-in-leave-to {transform: scale(.55); pointer-events: none; opacity: 0; }
 
-/* ------ end dark theme --------- */
+/* ------ end main theme --------- */
 
 
+/* ---- second theme ------ */
 
-/* ---- light theme ------ */
-
-.theme-light .container
+.second-theme .container
 {
-	background : url(../img/line.png) no-repeat center,#dde2e5;
+	background : url(../img/back.svg) no-repeat center,#090e16;
 	background-size : cover;
 }
 
-.theme-light .player
-{
-	/* background: #dde2e5; */
-	box-shadow : 4px 4px 16px #c8d0e7, -3px -3px 14px #fff;
+.second-theme .player
+{	
+	background: #090e16;
+	box-shadow : -14px -14px 60px #010f0b, 30px 30px 60px #04241c;	
 }
 
-.theme-light .player-bg
+.second-theme .top-icon
 {
-	border : 1px solid #e0e4e8;
-	background : #dde2e5;
+	color : #962e10;
 }
 
-.theme-light .top-icon
+.second-theme .point a 
 {
-	color : #6b7f8d;
+	background : #095f49;
 }
 
-.theme-light .point a
+.second-theme .point a:hover 
 {
-	border : 1px solid #f1f1f1;
+	background : #E19231;
 }
 
-.theme-light .time-radio
+.second-theme .time-radio
 {
-	color : #75b4e5;
+	color : #c10c2c;
 }
 
-.theme-light .main
+.second-theme .main
 {
-	color : #7b8f9c;
-	background : #d5dbdf;
+	color : #ae3412;
+	background : #0b111a;
 }
 
-.theme-light .pn-icon svg
+.second-theme .pn-icon svg
 {
-	color : #9eadb6;
+	color : #0a674f;
 }
 
-.theme-light .pn-icon svg:hover
+.second-theme .pn-icon svg:hover
 {
 	width : 1.75rem;
 	height : 1.75rem;
 
-	color : #283035;
+	color : #c10c2c;
 }
 
-.theme-light .xl-icon
+.second-theme .xl-icon
 {
-	border : none;
-	background : #e0e4e8;
-	box-shadow : 4px 4px 6px #fff, 1px 1px 6px #a0a0a0;
+	background : #095844;
 }
 
-.theme-light .xl-icon svg
+.second-theme .xl-icon svg
 {
-	color : #7b8f9c;
+	color : #12b48b;
 }
 
-.theme-light .xl-icon:hover
+.second-theme .xl-icon:hover
 {
-	background : #ecf0f3;
-	box-shadow : inset -3px -3px 7px #fff, inset 3px 3px 5px #ceced1;
+	background : #293c54;
 }
 
-.theme-light .xl-icon svg:hover
+.second-theme .xl-icon svg:hover
 {
-	color : #283035;
+	color : #9eadb6;
 }
 
-/* ------- end light theme ---------- */
+/* ------- end second theme ---------- */
 
 
 
@@ -580,20 +557,20 @@ input:focus, input:active
 @media ( max-width: 52.5rem )
 {
 	
-	.container
+.container
 {
 	background-image : none;
 	background-color : #1b2344;
 }
 
-	.theme-light .container
+.second-theme .container
 {
 	background-image : none;
-	background-color : #dde2e5;
+	background-color : #090e16;
 }
 
-.player ,
-.theme-light .player
+.player,
+.second-theme .player
 {
 	width : 100dvw;
 	height : 100dvh;
@@ -602,27 +579,41 @@ input:focus, input:active
 	box-shadow : none;
 }
 
-.player-bg ,
-.theme-light .player-bg
+.time-label svg,
+.color-label svg,
+.second-theme .time-label svg,
+.second-theme .color-label svg
 {
-	width : 100dvw;
-	height : 100dvh;
-
-	border-radius : 0;
+	width : 1.5rem;
+	height : 1.5rem;
 }
 
-.album-img ,
-.theme-light .album-img
+.album-img,
+.second-theme .album-img
 {
 	border-top-left-radius : 0;
 	border-top-right-radius : 0;
 }
 
-.main ,
-.theme-light .main
+.main,
+.second-theme .main
 {
+	padding : 0 2rem 0 3rem;
+
 	border-bottom-right-radius : 0;
 	border-bottom-left-radius : 0;
+}
+
+.name,
+.second-theme .name
+{
+	font-size : 1rem;
+}
+
+.artist,
+.second-theme .artist
+{
+	font-size : .8125rem;
 }
 
 .cover-img
@@ -630,6 +621,34 @@ input:focus, input:active
     width : 100dvw;
 	height : 25rem;	
 }	
+
+.pn-icon svg,
+.second-theme .pn-icon svg
+{
+	width : 2rem;
+	height : 2rem;
+}
+
+.pn-icon svg,
+.second-theme .pn-icon svg
+{
+	width : 2rem;
+	height : 2rem;
+}
+
+.xl-icon,
+.second-theme .xl-icon
+{
+	width : 4.25rem;
+	height : 4.25rem;
+}
+
+.xl-icon svg,
+.second-theme .xl-icon svg
+{
+	width : 2.75rem;
+	height : 2.75rem;
+}
 
 }
 
