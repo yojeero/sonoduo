@@ -1,6 +1,6 @@
 <img src="preview/pic.jpg">
 
-### [Arumo](https://arumo.vercel.app/) is a switched themes online radio player. ###
+### [Arumo](https://arumo.vercel.app/) is a online radio player. ###
 
 ```
 Features
@@ -9,7 +9,7 @@ Features
 - Switchable themes
 - 5 online radio stations presents
 - Any number of radio stations & covers in vue.player.js
-- Vue.js based website
+- Vue.js based player
 - Clock with time and day of week
 - 100% Responsive Design
 - Flexbox
