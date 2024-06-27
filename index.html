@@ -32,9 +32,9 @@
 <body>
 
 		<!-- loader -->
-		<!-- <div class="loader">
-			<svg viewBox="-3 -4 39 39"> <polygon fill="#daa520" stroke="#fff" stroke-width="1.3" points="16,0 32,32 0,32"></polygon></svg>
-		</div> -->
+		<div class="loader">
+			<svg viewBox="-3 -4 39 39"> <polygon fill="#008000" stroke="#fff" stroke-width="1.3" points="16,0 32,32 0,32"></polygon></svg>
+		</div>
 
 	<!-- player -->      
 
@@ -44,26 +44,25 @@
 
 		<div class="top-icon">
 
-			<div class="point"><a href="https://github.com/yojeero/" target="_blank"></a></div>
-		
-			<div class="live-time">
-		
-				<div class="time-label">
-					<svg><use xlink:href="img/icon.svg#icon-time"></use></svg>
-					<span>online</span>
-				</div>
-		
-				<div class="time-radio">{{ currentTime }}</div>
-		
+			<div class="point">
+				<a href="https://github.com/yojeero/" target="_blank">
+					<svg><use xlink:href="img/icon.svg#point"></use></svg>
+				</a>
 			</div>
-		
-			<div class="color-label">
+
+			<div>		
+				<div class="live-time">
+					<svg><use xlink:href="img/icon.svg#icon-time"></use></svg>				
+				</div>		
+				<div class="online">{{ currentTime }}</div>		
+			</div>
+
+		    <div class="colors">
 				<input type="checkbox" id="switch" />
 				<label for="switch">
 					<svg><use xlink:href="img/icon.svg#icon-color"></use></svg>
-				</label>
-		
-			</div>
+				</label>			
+			</div>	
 		
 		</div>
 

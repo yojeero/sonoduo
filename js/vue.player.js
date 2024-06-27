@@ -1,6 +1,6 @@
 
 /*  Track Time jQuery */
-$(document).ready(function(){$(".xl-icon").click(function(){$(".time-label").slideToggle();$(".time-radio").slideToggle()})});
+$(document).ready(function(){$(".xl-icon").click(function(){$(".live-time").slideToggle();$(".online").slideToggle()})});
 
 /*  Cover Spin  */
 function spin(){var a=document.getElementById("spinner");"running"===a.style.webkitAnimationPlayState?(a.style.webkitAnimationPlayState="paused",document.body.className="paused"):(a.style.webkitAnimationPlayState="running",document.body.className="")};
@@ -18,35 +18,35 @@ new Vue({
         {
           name: "CITY23",
           artist: "Premium Pop",
-          cover: "img/laguna.webp",
+          cover: "img/train.webp",
           source: "https://live.stream.maxfive.com/max5-city23/stream/mp3",
           url: "https://www.city23.at/"
         },  
         {
           name: "AN. MAINZ",
           artist: "Best Hits",
-          cover: "img/pool.webp",
+          cover: "img/sport.webp",
           source: "http://addrad.io/44556v5",
           url: "https://www.antenne-mainz.de"
         },
         {
           name: "MARETIMO",
           artist: "Lounge",
-          cover: "img/dark.webp",
+          cover: "img/decor.webp",
           source: "https://s35.derstream.net/lounge.mp3",
           url: "https://www.maretimo-records.com/en"
         },      
         {
           name: "CITY23          ",
           artist: "Beat,Baby!",
-          cover: "img/red.webp",
+          cover: "img/japan.webp",
           source: "https://live.stream.maxfive.com/max5-beat/stream/mp3",
           url: "https://www.city23.at/"
         },   
         {
           name: "AN. BAYERN",
           artist: "Luxury Pop",
-          cover: "img/leaves.webp",
+          cover: "img/italy.webp",
           source: "http://stream.antenne.de/pop-xxl/stream/mp3",
           url: "https://www.antenne.de/webradio/"
         }

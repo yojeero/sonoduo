@@ -13,7 +13,7 @@ body
 	transition : color 1s;
 	letter-spacing : 1px;
 
-	color : #989da2;
+	color : #6d7a7b;
 }
 
 /* ------ main theme -------- */
@@ -29,7 +29,7 @@ body
 	width : 100%;
 	height : 100%;	
 
-	background : url(../img/wave.svg) no-repeat center, #1b2344;
+	background : url(../img/dark.svg) no-repeat center, #121212;
 	background-size : cover;
 }
 
@@ -55,7 +55,7 @@ body
 
 	border-radius : 40px;
 
-	background : #141d29;
+	background : #121212;
 	box-shadow : -30px -30px 60px #0b0e18, 30px 30px 60px #000;	
 }
 
@@ -64,64 +64,63 @@ body
 	display : flex;
 	align-items : center;
 	flex-flow : row nowrap;
-	justify-content : space-around;
+	justify-content : flex-end;
 
 	width : 80%;
-	height : 3.125rem;
+	height : 4rem;
+	min-height : 64px;	
 
-	color : #89864c; 
+	color : #008000;
+}
+
+.point
+{
+	display : flex;
+	margin-right : auto;
 }
 
 .point a
 {
+	color : #463f3a;
+}
+
+.live-time
+{
 	display : flex;
 
-	width : .875rem;
-	height : .875rem;
+	margin-right : 1rem;
+
+	user-select : none;
+	pointer-events : none;
+
+	color : #463f3a;
+}
+
+.colors
+{
+	font-size : .875rem;
+	font-variant : small-caps;
+
+	display : flex;	
+}
+
+.point svg,
+.colors svg
+{
+	display : flex;
+
+	width : 1.5rem;
+	height : 1.5rem;
 
 	cursor : pointer;
 	transition : all .3s ease;
 
-	border-radius : 50%;
-
-	background : #036b8b;
+	fill : currentColor;
+	stroke : currentColor;
+	stroke-width : 0;
 }
 
-.point a:hover
-{
-	background : #cf950d;
-}
-
-.time-label
-{
-	font-size : .875rem;
-	font-variant : small-caps;
-
-	display : flex;
-	justify-content : space-between;
-
-	width : 4.375rem;
-	margin-left : 5rem;
-
-	user-select : none;
-	pointer-events : none;
-}
-
-.color-label
-{
-	font-size : .875rem;
-	font-variant : small-caps;
-
-	display : flex;
-}
-
-.color-label:hover
-{
-	color : #c10c2c;
-}
-
-.time-label svg ,
-.color-label svg
+.live-time svg
 {
 	display : flex;
 
@@ -136,21 +135,26 @@ body
 	stroke-width : 0;
 }
 
-.time-radio
+.point a svg:hover,
+.colors svg:hover
+{
+	color : #cd030a;
+}
+
+.online
 {
 	font-size : .875rem;
 
 	display : flex;
 	display : none;
-	justify-content : space-between;
 
-	width : 4.375rem;
-	margin-left : 5rem;
+	margin-right : 1rem;
 
 	user-select : none;
 	pointer-events : none;
 
-	color : #89864c;
+	color : #008000;
+	/* color : #6d7a7b; */
 }
 
 input[type=checkbox]
@@ -175,27 +179,25 @@ input:focus, input:active
 {
 	position : relative;
 
-	display : flex;	
-    
-    /* width : 320px;
-	height : 400px;	*/
+	display : flex;
+	flex : 1;
 
-    width : 20rem;
-	height : 25rem;	
-}	
+	/* width : 316px;
+	height : 420px;	*/
+
+	width : 19.75rem;
+	height : 26.25rem;
+}
 
 .album-img
 {
 	position : absolute;
-	z-index : 600;
-	top : 0;
-	left : 0;
-    
+
     width : 100%;
 	height : 100%;
 
 	border-top-left-radius : 40px;
-	border-top-right-radius : 40px;
+	border-top-right-radius : 40px; 
 
 	background-size : cover;
 }
@@ -206,8 +208,8 @@ input:focus, input:active
 	align-items : flex-start;
 	flex-flow : row nowrap;
 
-	width : 100%;
-	height : .5rem;
+	width : 19.75rem;
+	height : 4px;
 
 	user-select : none;
 	pointer-events : none;
@@ -222,7 +224,7 @@ input:focus, input:active
 	overflow : hidden;
 
 	width : 100%;
-	height : .5rem;
+	height : 4px;
 
 	user-select : none;
 	pointer-events : none;
@@ -236,28 +238,28 @@ input:focus, input:active
 	width : 0;
 	height : inherit;
 
-	background : #cf950d;
+	background : #463f3a;
 }
 
 .main
 {
 	display : flex;
 	align-items : center;
-	flex : 1;
 	flex-flow : row nowrap;
 	justify-content : space-between;
 
 	width : 100%;
-	height : 100%;
+	height : 7.875rem;
+	min-height : 126px;
 
 	padding : 0 1rem 0 2rem;
 
-	color : #a6a35e;
-
+	color : #6d7a7b;
+	
 	border-bottom-right-radius : 40px;
 	border-bottom-left-radius : 40px;
 
-	background : #0c131b;
+	background : #171717;
 }
 
 .album-info
@@ -279,7 +281,7 @@ input:focus, input:active
 
 .artist
 {
-	font-size : .6875rem;
+	font-size : .75rem;
 }
 
 .player-controls
@@ -316,7 +318,7 @@ input:focus, input:active
 	cursor : pointer;
 	transition : all .3s ease;
 
-	color : #036b8b;
+	color : #fcbf49;
 
 	fill : currentColor;
 	stroke : currentColor;
@@ -328,7 +330,7 @@ input:focus, input:active
 	width : 1.75rem;
 	height : 1.75rem;
 	
-	color : #c10c2c;
+	color : #cd030a;
 }
 
 .xl-icon
@@ -349,7 +351,7 @@ input:focus, input:active
 	border-radius : 50%;
 	outline : none;
 
-	background : #172433;
+	background : #9d0208;
 }
 
 .xl-icon svg
@@ -363,7 +365,7 @@ input:focus, input:active
 
 	cursor : pointer;
 
-	color : #04a1d1;
+	color : #000;
 
 	fill : currentColor;
 	stroke : currentColor;
@@ -372,12 +374,12 @@ input:focus, input:active
 
 .xl-icon:hover
 {
-	background : #c10c2c;
+	background : #cd030a;
 }
 
 .xl-icon svg:hover
 {
-	color : #c4c7ca;
+	color : #fff;
 }
 
 .bottom-clock
@@ -393,7 +395,8 @@ input:focus, input:active
 	pointer-events : none;
 
 	width : 80%;	
-	height : 3.125rem;
+	height : 4rem;
+	min-height : 64px;
 }
 
 #time
@@ -401,7 +404,7 @@ input:focus, input:active
 	font-size : 2rem;
 	letter-spacing : .2rem;
 
-	color : #cf950d;
+	color : #cd030a;
 }
 
 #day
@@ -411,7 +414,7 @@ input:focus, input:active
 	letter-spacing : .4rem;
 	text-transform : uppercase;
 
-	color : #afac6d;
+	color : #cf950d;
 }
 
 /* cover effect */
@@ -431,45 +434,62 @@ input:focus, input:active
 
 .second-theme .container
 {
-	background : url(../img/back.svg) no-repeat center,#090e16;
-	background-size : cover;
+	background: url(../img/snow.svg) no-repeat center, #dceef2;
+	background-size: cover;
 }
 
 .second-theme .player
 {	
-	background: #090e16;
-	box-shadow : -14px -14px 60px #010f0b, 30px 30px 60px #04241c;	
+	background: #dceef2;
+	border: 2px solid #fff;
+	box-shadow : -2px -1px 0 #fff, 4px 4px 0 #1ba7bf;	
 }
 
 .second-theme .top-icon
 {
-	color : #962e10;
+	color : #00b4d8;
 }
 
-.second-theme .point a 
+.second-theme .live-time
 {
-	background : #095f49;
+	color : #fff;
 }
 
-.second-theme .point a:hover 
+.second-theme .point a
 {
-	background : #E19231;
+	color : #fff;
 }
 
-.second-theme .time-radio
+.second-theme .point a svg:hover ,
+.second-theme .colors svg:hover
 {
-	color : #c10c2c;
+	color : #463f3a;
+}
+
+.second-theme .online
+{
+	color : #121212;
+}
+
+.second-theme .progress_bar
+{
+	background : #fff;
+}
+
+.second-theme .line
+{
+	background : #dceef2;
 }
 
 .second-theme .main
 {
-	color : #ae3412;
-	background : #0b111a;
+	color : #000;
+	background : #eef6f8;
 }
 
 .second-theme .pn-icon svg
 {
-	color : #0a674f;
+	color : #000;
 }
 
 .second-theme .pn-icon svg:hover
@@ -477,27 +497,43 @@ input:focus, input:active
 	width : 1.75rem;
 	height : 1.75rem;
 
-	color : #c10c2c;
+	color : #00b4d8;
 }
 
 .second-theme .xl-icon
 {
-	background : #095844;
+	border-radius : 50%;
+	background : #eef6f8;
+	box-shadow : 5.11px 5.11px 10px #cbd2d4, 
+	-5.11px -5.11px 10px #fff;
 }
 
 .second-theme .xl-icon svg
 {
-	color : #12b48b;
+	color : #000;
 }
 
 .second-theme .xl-icon:hover
 {
-	background : #293c54;
+	border-radius : 100%;
+	background : #eef6f8;
+	box-shadow : inset 5.11px 5.11px 10px #cbd2d4, 
+	inset -5.11px -5.11px 10px #fff;
 }
 
 .second-theme .xl-icon svg:hover
 {
-	color : #9eadb6;
+	color : #000;
+}
+
+.second-theme #time
+{
+	color : #463f3a;
+}
+
+.second-theme #day
+{
+	color : #00b4d8;
 }
 
 /* ------- end second theme ---------- */
@@ -521,7 +557,7 @@ input:focus, input:active
 
 	margin : auto;
 
-	background : #daa520;
+	background : #008000;
 }
 
 .loader svg
@@ -560,13 +596,13 @@ input:focus, input:active
 .container
 {
 	background-image : none;
-	background-color : #1b2344;
+	background-color : #121212;
 }
 
 .second-theme .container
 {
 	background-image : none;
-	background-color : #090e16;
+	background-color : #dceef2;
 }
 
 .player,
@@ -579,10 +615,10 @@ input:focus, input:active
 	box-shadow : none;
 }
 
-.time-label svg,
-.color-label svg,
-.second-theme .time-label svg,
-.second-theme .color-label svg
+.live-time svg,
+.colors svg,
+.second-theme .live-time svg,
+.second-theme .colors svg
 {
 	width : 1.5rem;
 	height : 1.5rem;
@@ -619,7 +655,7 @@ input:focus, input:active
 .cover-img
 {
     width : 100dvw;
-	height : 25rem;	
+	height : 100dvh;	
 }	
 
 .pn-icon svg,
